@@ -1,4 +1,5 @@
 {
+  "homepage": "http://uhsnarpgupta.github.io/photowall",
   "name": "photowall",
   "version": "0.1.0",
   "private": true,
@@ -6,11 +7,20 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "firebase": "^7.17.2",
+    "form-serialize": "^0.7.2",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -30,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
